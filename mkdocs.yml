@@ -4,6 +4,12 @@ nav:
     - Contributing:
         'Introduction': 'contribute/index.md'
         'Forking': 'contribute/fork.md'
+        'Branches': 'static/page/construction.md'
+        'Code Signing': 'https://www.qubes-os.org/doc/code-signing/'
+        'Commits': 'static/page/construction.md'
+        'Pull Request': 'static/page/construction.md'
+        'Bug Reports': 'static/page/construction.md'
+        'Conclusion': 'static/page/construction.md'
     - Code Style Guide:
-        'style-guide/index.md'
+        'Introduction': 'style-guide/index.md'
 theme: readthedocs
