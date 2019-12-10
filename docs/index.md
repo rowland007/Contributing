@@ -1,17 +1,9 @@
-# Welcome to MkDocs
+# Contributing to Projects
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
+[Pull requests](#), [bug reports](#), and questions are always welcome. If you feel like contributing financially, please see my [donation](https://randyrowland.me/donations/) page.
 
-## Commands
+- See each projects *build* page on how to build the specific project
+- The [Contributing](https://rowland007.github.io/Contributing/contribute/) specifies how to use Git and Github with the projects
+- The [Code Style Guide](https://rowland007.github.io/Contributing/style-guide/) shows how to import files, use classes, methods, and variable names
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+![LIFE IS BETTER WHEN YOU CODE](static/img/life is better.jpg)
