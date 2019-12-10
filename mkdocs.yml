@@ -1,0 +1,8 @@
+site_name: Contributing
+nav:
+    - Home: 'index.md'
+    - Contributing:
+        'contribute/index.md'
+    - Code Style Guide: 
+        'style-guide/index.md'
+theme: readthedocs
