@@ -12,7 +12,7 @@ Be sure to checkout the Style Guide to save yourself headaches during a pull req
 
 ## Table of Contents
 
-- [Forking the Project](../static/page/construction.md)
+- [Forking the Project](fork.md)
 - [Branches](../static/page/construction.md)
 - [Code Signing (External Website)](https://www.qubes-os.org/doc/code-signing/)
 - [Committing](../static/page/construction.md)

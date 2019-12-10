@@ -2,7 +2,8 @@ site_name: Contributing
 nav:
     - Home: 'index.md'
     - Contributing:
-        'contribute/index.md'
+        'Introduction': 'contribute/index.md'
+        'Forking': 'contribute/fork.md'
     - Code Style Guide:
         'style-guide/index.md'
 theme: readthedocs
