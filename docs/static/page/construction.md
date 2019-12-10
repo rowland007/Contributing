@@ -1,3 +1,3 @@
 # UNDER CONSTRUCTION
 
-[UNDER CONSTRUCTION](../../static/img/under-construction.jpg)
+![UNDER CONSTRUCTION](../img/under-construction.jpg)
