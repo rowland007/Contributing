@@ -2,7 +2,7 @@
 
 Want to contribute to my project but never used git before? Maybe you just need a refresher? Or if you just want to know how I would like my projects done? This guide is for you!
 
-![GIT](static/img/git-21.jpg)
+![GIT](../static/img/git-21.jpg)
 
 ## Notice
 
@@ -12,8 +12,8 @@ Be sure to checkout the Style Guide to save yourself headaches during a pull req
 
 ## Table of Contents
 
-- [Forking the Project](static/page/construction.md)
-- [Branches](static/page/construction.md)
+- [Forking the Project](../static/page/construction.md)
+- [Branches](../static/page/construction.md)
 - [Code Signing (External Website)](https://www.qubes-os.org/doc/code-signing/)
-- [Committing](static/page/construction.md)
-- [Pull Request](static/page/construction.md)
+- [Committing](../static/page/construction.md)
+- [Pull Request](../static/page/construction.md)
