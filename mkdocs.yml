@@ -6,7 +6,7 @@ nav:
         'Forking': 'contribute/fork.md'
         'Branches': 'static/page/construction.md'
         'Code Signing': 'https://www.qubes-os.org/doc/code-signing/'
-        'Commits': 'static/page/construction.md'
+        'Commits': 'contribute/commit.md'
         'Pull Request': 'static/page/construction.md'
         'Bug Reports': 'static/page/construction.md'
         'Conclusion': 'static/page/construction.md'
