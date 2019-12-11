@@ -1,4 +1,17 @@
-site_name: Contributing
+# Project information
+site_name: 'Contributing'
+site_description: 'Information on how to contribute to my projects'
+site_author: 'Randy Rowland'
+site_url: 'https://rowland007.github.io/Contributing/'
+
+# Repository
+repo_name: 'rowland007'
+repo_url: 'https://github.com/rowland007'
+
+# Copyright
+copyright: 'GNU General Public License v3.0'
+
+# Navigation Menu
 nav:
     - Home: 'index.md'
     - Contributing:
@@ -12,4 +25,38 @@ nav:
         'Conclusion': 'static/page/construction.md'
     - Code Style Guide:
         'Introduction': 'style-guide/index.md'
-theme: readthedocs
+
+# Configuration
+theme: 
+    name: 'material'
+    palette:
+        primary: 'blue'
+        accent: 'amber'
+    logo:
+        icon: 'people_alt'
+    language: 'en'
+    font:
+        text: 'Roboto'
+        code: 'Roboto Mono'
+
+# Customization
+extra:
+    social:
+        - type: 'github'
+          link: 'https://github.com/rowland007'
+        - type: 'twitter'
+          link: 'https://twitter.com/randarxj7'
+        - type: 'keybase'
+          link: 'https://keybase.io/randarxj7'
+        - type: 'linkedin'
+          link: 'https://www.linkedin.com/in/randall-rowland-332a5039'
+        - type: 'dev'
+          link: 'https://dev.to/rowland007'
+        - type: 'reddit-alien'
+          link: 'https://www.reddit.com/user/rowland007'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
