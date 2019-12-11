@@ -4,6 +4,8 @@ Want to contribute to my project but never used git before? Maybe you just need 
 
 ![GIT](../static/img/git-21.jpg)
 
+All contributions to the source code **must** be cryptographically signed by the author’s PGP key or GitHub's key.
+
 ## Notice
 
 This page is always a work in progress. It gets updated when I learn new tricks or when there's a more secure way of doing things. If you notice any errors or have trouble with a way I am doing things, please feel free to contact me via my website: [randyrowland.me](https://randyrowland.me/#contact). You may also create a pull request for this guide.
