@@ -20,7 +20,7 @@ nav:
         'Branches': 'contribute/branch.md'
         'Code Signing': 'https://www.qubes-os.org/doc/code-signing/'
         'Commits': 'contribute/commit.md'
-        'Pull Request': 'static/page/construction.md'
+        'Pull Request': 'contribute/pull.md'
         'Bug Reports': 'static/page/construction.md'
         'Conclusion': 'static/page/construction.md'
     - Code Style Guide:
