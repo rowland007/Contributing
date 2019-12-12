@@ -9,7 +9,7 @@ repo_name: 'rowland007'
 repo_url: 'https://github.com/rowland007'
 
 # Copyright
-copyright: 'GNU General Public License v3.0'
+copyright: '&#127279; 2019 GNU General Public License v3.0'
 
 # Navigation Menu
 nav:
@@ -46,12 +46,8 @@ extra:
           link: 'https://github.com/rowland007'
         - type: 'twitter'
           link: 'https://twitter.com/randarxj7'
-        - type: 'keybase'
-          link: 'https://keybase.io/randarxj7'
         - type: 'linkedin'
           link: 'https://www.linkedin.com/in/randall-rowland-332a5039'
-        - type: 'dev'
-          link: 'https://dev.to/rowland007'
         - type: 'reddit-alien'
           link: 'https://www.reddit.com/user/rowland007'
 
