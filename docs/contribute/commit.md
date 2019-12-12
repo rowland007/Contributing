@@ -8,7 +8,10 @@ Most programming languages have well-established conventions as to what constitu
 
 Reviewing others’ commits and pull requests becomes something worth doing, and suddenly can be done independently. Understanding why something happened months or years ago becomes not only possible but efficient.
 
-Fortunately, there are well-established conventions as to what makes an idiomatic Git commit message. Indeed, many of them are assumed in the way certain Git commands function. There’s nothing you need to re-invent. Just follow the seven rules below and you’re on your way to committing like a pro but don't forget to sign your commits with the ```-s``` flag.
+Fortunately, there are well-established conventions as to what makes an idiomatic Git commit message. Indeed, many of them are assumed in the way certain Git commands function. There’s nothing you need to re-invent. Just follow the seven rules below and you’re on your way to committing like a pro.
+
+!!! success "Requirement"
+    Don't forget to sign your commits with the ```-s``` flag.
 
 ## The Seven Rules for Great Git Commit Messages
 
@@ -52,7 +55,8 @@ Resolves: #123
 See also: #456, #789
 ```
 
-To read more about the 7 rules, visit [Chris Beams How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit) article.
+!!! info
+    To read more about the 7 rules, visit [Chris Beams How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit) article.
 
 ## Git Commit Message Template
 

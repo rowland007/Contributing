@@ -20,7 +20,10 @@ If I like you're work and it meets the Code Style Guidelines, I might pull your 
 
 ## Keeping your fork synced
 
-You might fork a project in order to propose changes to the *upstream*, or original, repository. In this case, it's good practice to regularly sync your fork with the upstream repository. The following is based on an article by [Chris Simpkins](https://medium.com/sweetmeat/how-to-keep-a-downstream-git-repository-current-with-upstream-repository-changes-10b76fad6d97).
+You might fork a project in order to propose changes to the *upstream*, or original, repository. In this case, it's good practice to regularly sync your fork with the upstream repository.
+
+!!! info
+    The following is based on an article by [Chris Simpkins](https://medium.com/sweetmeat/how-to-keep-a-downstream-git-repository-current-with-upstream-repository-changes-10b76fad6d97).
 
 ### The Problem
 
@@ -71,9 +74,10 @@ Very rarely will my projects not have a ```develop``` branch (usually my website
 
 ![UPSTREAM](../static/img/upstream.png)
 
-Big take away here is:
+!!! tip
+    Big take away here is:
 
-- *upstream* & *original* mean they are mine
-- *downstream*, *fork*, and *origin* are yours
+    - *upstream* & *original* means they are mine
+    - *downstream*, *fork*, and *origin* are yours
 
 See the next section about creating a new branch for your work.

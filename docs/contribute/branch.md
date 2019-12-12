@@ -27,7 +27,8 @@ There are several different types of branches with their own unique uses. Below 
 
 Each of these branches have a specific purpose and are bound to strict rules as to which branches may be their originating branch and which branches must be their merge targets. We will walk through them in a minute.
 
-By no means are these branches “special” from a technical perspective. The branch types are categorized by how we use them. They are of course plain old Git branches.
+!!! info
+    By no means are these branches “special” from a technical perspective. The branch types are categorized by how we use them. They are of course plain old Git branches.
 
 ### Feature Branches
 
@@ -39,7 +40,8 @@ Feature branches (or sometimes called topic branches) are used to develop new fe
 
 ![FEATURE BRANCH](../static/img/git-flow-feature-branch.png)
 
-Feature branches typically exist in developer repos only (aka *fork*/*downstream*), not in origin.
+!!! info
+    Feature branches typically exist in developer repos only (aka *fork*/*downstream*), not in origin.
 
 Finished features may be merged into the develop branch to definitely add them to the upcoming release. The ```--no-ff``` flag causes the merge to always create a new commit object, even if the merge could be performed with a fast-forward. This avoids losing information about the historical existence of a feature branch and groups together all commits that together added the feature.
 
@@ -118,12 +120,20 @@ hugo new site --force .
 mkdocs new .
 ```
 
-Don't forget to add the generated contents folder to the *.gitignore* file. For Hugo it is ```public/``` and for Mkdocs it is ```site/```.
+!!! tip
+    Add the generated contents folder to the *.gitignore* file.
 
-```bash
-echo "public/" >> .gitignore
-echo "site/" >> .gitignore
-```
+    ```
+    echo "public/" >> .gitignore
+    ```
+
+    or
+
+    ```
+    echo "site/" >> .gitignore
+    ```
+
+    For Hugo it is ```public/``` and for Mkdocs it is ```site/```.
 
 Now comes the tricky and confusing part. While remaining on the ```docs``` or ```master``` branch, you'll checkout the ```gh-pages``` branch inside of the ```public/``` or ```site/``` folder. That way when the site is generated, it's already on the ```gh-pages``` branch. This keeps the site's source files and the site's generated files separated and in different branches for better readability.
 
@@ -135,7 +145,8 @@ The command to be able to checkout another branch to a specific folder is ```wor
 git worktree add -B gh-pages <public | site> origin/gh-pages
 ```
 
-Remember, you run this command from your ```docs``` or ```master``` branch. Also note you do not need the <&nbsp;> it is just there to show you only chose one of the folders depending on your generator's output folder.
+!!! warning
+    Remember, you run this command from your ```docs``` or ```master``` branch. Also note you do not need the <&nbsp;> it is just there to show you only chose one of the folders depending on your generator's output folder.
 
 Now you can build your content with either ```hugo``` or ```mkdocs build```. Now you can run one command to commit your changes and push it to your site for publishing.
 
@@ -175,7 +186,8 @@ The command to be able to checkout another branch to a specific folder is ```wor
 git worktree add -B gh-pages <public | site> origin/gh-pages
 ```
 
-Remember, you run this command from your ```docs``` or ```master``` branch. Also note you do not need the <&nbsp;> it is just there to show you only chose one of the folders depending on your generator's output folder.
+!!! warning
+    Remember, you run this command from your ```docs``` or ```master``` branch. Also note you do not need the <&nbsp;> it is just there to show you only chose one of the folders depending on your generator's output folder.
 
 Now you can build your content with either ```hugo``` or ```mkdocs build```. Now you can run one command to commit your changes and push it to your site for publishing.
 

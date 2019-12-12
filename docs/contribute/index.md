@@ -4,7 +4,8 @@ Want to contribute to my project but never used git before? Maybe you just need 
 
 ![GIT](../static/img/git-21.jpg)
 
-All contributions to the source code **must** be cryptographically signed by the author’s PGP key or GitHub's key.
+!!! success "Requirement"
+    All contributions to the source code **must** be cryptographically signed by the author’s PGP key or GitHub's key.
 
 ## Notice
 
