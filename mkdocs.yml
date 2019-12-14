@@ -21,7 +21,7 @@ nav:
         'Code Signing': 'https://www.qubes-os.org/doc/code-signing/'
         'Commits': 'contribute/commit.md'
         'Pull Request': 'contribute/pull.md'
-        'Bug Reports': 'static/page/construction.md'
+        'Bug Reports': 'contribute/bug.md'
         'Conclusion': 'static/page/construction.md'
     - Code Style Guide:
         'Introduction': 'style-guide/index.md'
