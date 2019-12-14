@@ -5,7 +5,7 @@ site_author: 'Randy Rowland'
 site_url: 'https://rowland007.github.io/Contributing/'
 
 # Repository
-repo_name: 'rowland007'
+repo_name: 'Randy Rowland'
 repo_url: 'https://github.com/rowland007'
 
 # Copyright
@@ -56,3 +56,6 @@ markdown_extensions:
   - admonition
   - codehilite:
       guess_lang: false
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
