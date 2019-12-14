@@ -27,7 +27,7 @@ nav:
         'Introduction': 'style-guide/index.md'
 
 # Configuration
-theme: 
+theme:
     name: 'material'
     palette:
         primary: 'blue'
