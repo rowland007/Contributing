@@ -25,6 +25,10 @@ nav:
         'Conclusion': 'static/page/construction.md'
     - Code Style Guide:
         'Introduction': 'style-guide/index.md'
+        'Variables': 'style-guide/variables.md'
+        'Functions': 'style-guide/functions.md'
+        'Objects and Data Structures': 'style-guide/objects.md'
+        'Classes': 'style-guide/classes.md'
 
 # Configuration
 theme:
