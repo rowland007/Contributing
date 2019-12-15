@@ -16,7 +16,8 @@ Be sure to checkout the Style Guide to save yourself headaches during a pull req
 ## Table of Contents
 
 - [Forking the Project](fork.md)
-- [Branches](../static/page/construction.md)
+- [Branches](branch.md)
 - [Code Signing (External Website)](https://www.qubes-os.org/doc/code-signing/)
-- [Committing](../static/page/construction.md)
-- [Pull Request](../static/page/construction.md)
+- [Committing](commit.md)
+- [Pull Request](pull.md)
+- [Bug Reports](bug.md)
