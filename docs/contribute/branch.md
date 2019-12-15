@@ -115,25 +115,25 @@ git checkout -B docs
 
 You can now initialize your site's static generator if you're using one. I use [Hugo](https://gohugo.io/) and [Mkdocs](https://www.mkdocs.org/) for my pages.
 
-```bash
-hugo new site --force .
-mkdocs new .
-```
+!!! example "Initialization Commands"
+    ```bash tab='Hugo'
+    hugo new site --force .
+    ```
+    
+    ```bash tab='Mkdocs'
+    mkdocs new .
+    ```
 
 !!! tip
     Add the generated contents folder to the *.gitignore* file.
 
-    ```
+    ```bash tab='Hugo'
     echo "public/" >> .gitignore
     ```
 
-    or
-
-    ```
+    ```bash tab='Mkdocs'
     echo "site/" >> .gitignore
     ```
-
-    For Hugo it is ```public/``` and for Mkdocs it is ```site/```.
 
 Now comes the tricky and confusing part. While remaining on the ```docs``` or ```master``` branch, you'll checkout the ```gh-pages``` branch inside of the ```public/``` or ```site/``` folder. That way when the site is generated, it's already on the ```gh-pages``` branch. This keeps the site's source files and the site's generated files separated and in different branches for better readability.
 
@@ -141,9 +141,15 @@ Now comes the tricky and confusing part. While remaining on the ```docs``` or ``
 
 The command to be able to checkout another branch to a specific folder is ```worktree```:
 
-```bash
-git worktree add -B gh-pages <public | site> origin/gh-pages
-```
+!!! example "Checkout a branch to a specific folder"
+    ```bash tab='Hugo'
+    git worktree add -B gh-pages public origin/gh-pages
+    ```
+
+    ```bash tab='Mkdocs'
+    git worktree add -B gh-pages site origin/gh-pages
+    ```
+
 
 !!! warning
     Remember, you run this command from your ```docs``` or ```master``` branch. Also note you do not need the <&nbsp;> it is just there to show you only chose one of the folders depending on your generator's output folder.
@@ -168,23 +174,38 @@ git push origin docs
 
 You can now initialize your site's static generator if you're using one. I use [Hugo](https://gohugo.io/) and [Mkdocs](https://www.mkdocs.org/) for my pages.
 
-```bash
-hugo new site --force .
-mkdocs new .
-```
+!!! example "Initialization Commands"
+    ```bash tab='Hugo'
+    hugo new site --force .
+    ```
+    
+    ```bash tab='Mkdocs'
+    mkdocs new .
+    ```
 
-Don't forget to add the generated contents folder to the *.gitignore* file. For Hugo it is ```public/``` and for Mkdocs it is ```site/```.
+Don't forget to add the generated contents folder to the *.gitignore* file. 
 
-```bash
-echo "public/" >> .gitignore
-echo "site/" >> .gitignore
-```
+!!! tip
+    Add the generated contents folder to the *.gitignore* file.
+
+    ```bash tab='Hugo'
+    echo "public/" >> .gitignore
+    ```
+
+    ```bash tab='Mkdocs'
+    echo "site/" >> .gitignore
+    ```
 
 The command to be able to checkout another branch to a specific folder is ```worktree```:
 
-```bash
-git worktree add -B gh-pages <public | site> origin/gh-pages
-```
+!!! example "Checkout a branch to a specific folder"
+    ```bash tab='Hugo'
+    git worktree add -B gh-pages public origin/gh-pages
+    ```
+
+    ```bash tab='Mkdocs'
+    git worktree add -B gh-pages site origin/gh-pages
+    ```
 
 !!! warning
     Remember, you run this command from your ```docs``` or ```master``` branch. Also note you do not need the <&nbsp;> it is just there to show you only chose one of the folders depending on your generator's output folder.
