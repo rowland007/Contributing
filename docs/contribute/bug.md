@@ -104,15 +104,15 @@ A Bug description is incomplete without the Expected and Actual results. It is n
 !!! failure "Bad"
     The button shows a cat.
 
-## Example Bug Report
+## Example Bug Report :bug:
 
 !!! example
     **Bug Name:** Application crash on clicking the SAVE button while creating a new user.  
     **Bug ID:** (It will be automatically created by the BUG Tracking tool once you save this bug)  
     **Area Path:** USERS menu > New Users  
     **Build Number:** Version Number 5.0.1  
-    **Severity:** HIGH (High/Medium/Low) or 1  
-    **Priority:** HIGH (High/Medium/Low) or 1  
+    **Severity:** HIGH :chart_with_upwards_trend: (High/Medium/Low) or 1  
+    **Priority:** HIGH :arrow_up: (High/Medium/Low) or 1  
     **Reported By:** Your Name  
     **Reported On:** Date  
     **Reason:** Defect  
@@ -137,13 +137,19 @@ A Bug description is incomplete without the Expected and Actual results. It is n
 - If you disagree strongly, consider giving it a few minutes before responding; think before you react.
 - Avoid using derogatory terms, like “stupid”, when referring to the work someone has produced.
 - Be humble. (“I’m not sure, let’s try…”)
-- Avoid hyperbole. (“NEVER do…”)
+- Avoid hyperbole. (“:x: NEVER do…”)
 - Aim to develop professional skills, group knowledge and product quality, through group critique.
 - Be aware of negative bias with online communication. (If content is neutral, we assume the tone is negative.) Can you use positive language as opposed to neutral?
 - You may use emoji to clarify tone. [GitHub emoji list](https://gist.github.com/rxaviers/7360908)
+
+    !!! example "Emoji Examples"
+        - Can some one get some :eyes: on this please?
+        - :+1: :+1: Looks good, let's get this merged!
+        - :fire::fire::fire: SECURITY ALERT: App is vulnerable to CVE-2019XXX :fire::fire::fire:
+
 - Consider leading with an expression of appreciation, especially when feedback has been mixed.
 - Ask for clarification. (“I don’t understand, can you clarify?”)
 - Offer clarification, explain the decisions you made to reach a solution in question.
 - Try to respond to every comment.
-- Link to any follow up commits, issues or Pull Requests. (“Good call! Done in issue #1682851”)
+- Link to any follow up commits, issues or Pull Requests. (“Good call! :raised_hands: Done in issue #1682851”)
 - As a last resort, if there is growing confusion or debate, ask yourself if the written word is still the best form of communication. Talk (virtually) face-to-face, then mutually consider posting a follow-up to summarize any offline discussion (useful for others who be following along, now or later).
