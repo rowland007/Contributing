@@ -3,7 +3,7 @@
 Pull requests let you tell others about changes you've pushed to a branch in a repository. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.
 
 !!! tip
-    If you have a lot of commits, squash them into a single commit.
+    If you have a lot of commits, [squash](../commit/#squashing-commits) them into a single commit.
 
 !!! tip
     Recommend that you use a topic branch for your pull request. While you can send pull requests from any branch or commit, with a topic branch you can push follow-up commits if you need to update your proposed changes.
@@ -82,11 +82,16 @@ Use @mention individuals that you specifically want to involve in the discussion
 - Be aware of negative bias with online communication. (If content is neutral, we assume the tone is negative.) Can you use positive language as opposed to neutral?
 - You may use emoji to clarify tone. [GitHub emoji list](https://gist.github.com/rxaviers/7360908)
 
+    !!! example "Emoji Examples"
+        - Can some one get some :eyes: on this please?
+        - :+1: :+1: Looks good, let's get this merged!
+        - :fire::fire::fire: SECURITY ALERT: App is vulnerable to CVE-2019XXX :fire::fire::fire:
+
 ### Responding to feedback
 
 - Consider leading with an expression of appreciation, especially when feedback has been mixed.
-- Ask for clarification. (“I don’t understand, can you clarify?”)
+- Ask for clarification. (“I don’t understand, can you clarify? :raising_hand::confused:”)
 - Offer clarification, explain the decisions you made to reach a solution in question.
 - Try to respond to every comment.
-- Link to any follow up commits or Pull Requests. (“Good call! Done in issue #1682851”)
+- Link to any follow up commits or Pull Requests. (“Good call! :raised_hands: Done in issue #1682851”)
 - As a last resort, if there is growing confusion or debate, ask yourself if the written word is still the best form of communication. Talk (virtually) face-to-face, then mutually consider posting a follow-up to summarize any offline discussion (useful for others who be following along, now or later).
