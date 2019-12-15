@@ -22,7 +22,6 @@ nav:
         'Commits': 'contribute/commit.md'
         'Pull Request': 'contribute/pull.md'
         'Bug Reports': 'contribute/bug.md'
-        'Conclusion': 'static/page/construction.md'
     - Code Style Guide:
         'Introduction': 'style-guide/index.md'
         'Variables': 'style-guide/variables.md'
