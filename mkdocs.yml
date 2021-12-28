@@ -9,7 +9,7 @@ repo_name: 'Randy Rowland'
 repo_url: 'https://github.com/rowland007'
 
 # Copyright
-copyright: '&#127279; 2019 GNU General Public License v3.0'
+copyright: 'Copyright &copy; 2019-2022 Randall Rowland<br>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
 
 # Navigation Menu
 nav:
@@ -31,28 +31,29 @@ nav:
 
 # Configuration
 theme:
-    name: 'material'
-    palette:
-        primary: 'blue'
-        accent: 'amber'
-    logo:
-        icon: 'people_alt'
-    language: 'en'
-    font:
-        text: 'Roboto'
-        code: 'Roboto Mono'
+  name: material
+  palette:
+    primary: blue
+    accent: amber
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: material/certificate
 
 # Customization
 extra:
-    social:
-        - type: 'github'
-          link: 'https://github.com/rowland007'
-        - type: 'twitter'
-          link: 'https://twitter.com/randarxj7'
-        - type: 'linkedin'
-          link: 'https://www.linkedin.com/in/randall-rowland-332a5039'
-        - type: 'reddit-alien'
-          link: 'https://www.reddit.com/user/rowland007'
+  social:
+    - icon: material/cloud
+      link: https://randyrowland.me
+    - icon: fontawesome/brands/github
+      link: https://github.com/rowland007
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/randarxj7
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/randall-rowland-jr
+    - icon: fontawesome/brands/reddit-alien
+      link: https://www.reddit.com/user/rowland007
 
 # Extensions
 markdown_extensions:
@@ -60,5 +61,7 @@ markdown_extensions:
   - codehilite:
       guess_lang: false
   - pymdownx.superfences
+  - pymdownx.tasklist
   - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
