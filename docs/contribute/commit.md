@@ -114,9 +114,75 @@ This prevents git from using the template as the commit message.
 
 ## Squashing Commits
 
+![image](https://blog.axosoft.com/wp-content/uploads/2017/06/Squash.gif)
 ![COMMIT SQUASH](../static/img/commits-to-be-squashed.gif)
 
-### Using Rebase
+Squash your feature's commits before requesting a pull request into the `develop` branch.
+
+## Merging vs Rebase
+
+In our project’s Git repository, two branches currently exist: the usual master branch, and a feature branch that we created right after the initial commit. On the master branch, we have italicized the ‘a’, then bolded the ‘a’. On our feature branch, we have italicized the ‘b’, and then bolded the ‘b’.
+
+![image](https://cdn-images-1.medium.com/max/1600/1*fLmkwjjWawGJ8a-XSac7yw.png)
+
+### Merge
+
+By merging feature into master, master obtains a new commit — a “merge commit”.
+
+![image](https://cdn-images-1.medium.com/max/1600/1*IN9828OlYl78n1eydimeHw.png "Merging master into our feature branch. “Let’s just smush these branches together”.")
+
+All by itself, the merge commit represents every change that has occurred on feature since it branched from master. Clean and simple.
+
+The downside of merging? If used too liberally, merge commits can clutter up your Git logs, and make it much more difficult to understand the flow of your project’s history. For collaborative workflows in which other developers (and potentially even project managers/leads or QA) read your project’s Git logs for insight and context, readability is important.
+
+![image](https://cdn-images-1.medium.com/max/1600/0*NFscoCQwTuLB8mQu.png "An extreme example of merge-mania. Difficult to decipher, but at least the colors are pretty")
+
+To avoid this pitfall, try to use merges purposefully and sparingly. Avoid branching and merging when only making minor tweaks or trivial bug fixes. Use merge for cases where you want a set of commits to stand out.
+
+Large refactors and major feature additions are good candidates for separate feature branches that can later be merged into master. As an added bonus, when merges are reserved for these major changes, the merge commits act as milestones that others can use to figure out when these major changes were incorporated into the project.
+
+### Rebase
+
+Let’s rewind, and pretend that we instead wanted to keep working on styling the letter ‘b’ — maybe change its size, font, color, etc. We need to get it just right — this change affects 50% of our codebase! But before we continue working on our feature branch, we decide we want to bring in the latest changes from master to keep things fresh.
+
+Rather than merging master’s new commits into feature, we opt to rebase our feature branch onto master.
+
+```bash
+git checkout feature
+git rebase master
+```
+
+At a high level, rebasing can be understood as “moving the base of a branch onto a different position”. Think of it like a redo — “I meant to start here.”
+
+![image](https://cdn-images-1.medium.com/max/1600/1*eHUiulTV6Wxu1kCFaS9iZQ.png "The result of rebasing our feature branch onto master.")
+
+At a lower level, what rebase actually does is pluck commits from a branch one by one (chronologically) and re-attach them to a different commit. The point at which the branch…branched has now changed.
+
+![image](https://cdn-images-1.medium.com/max/1600/1*SRheEogh9eepWo2u3143qQ.png "What actually happens when rebasing our feature branch onto master. We are essentially replaying the feature branch commits from a new starting point.")
+
+You might see from the diagrams above why we would choose to rebase instead of merge in this situation. Unlike with merging, rebase does not create an extra commit. This is ideal for our situation, since all we are currently trying to do is keep our feature branch up-to-date with any new commits from master. This is definitely not a meaningful event we want to preserve in our project’s history.
+
+Although the changes on the newly rebased feature branch are identical to what they were before, it is good to note that, from Git’s perspective, these are new commits with new SHA’s (the commits’ identifiers).
+
+But even more importantly, realize that the feature branch’s history has been completely rewritten. That sounds a bit heavy, doesn’t it? You might wonder if there are implications to this you should worry about.
+
+#### The Golden Rule of Rebasing
+
+Once you understand what rebasing is, the most important thing to learn is when not to do it. The golden rule of git rebase is to never use it on public branches.
+
+For example, think about what would happen if you rebased ```master``` onto your ```feature``` branch:
+
+![image](https://wac-cdn.atlassian.com/dam/jcr:1d22f018-b2c7-4096-9db1-c54940cf4f4e/05.svg?cdnVersion=le)
+
+The rebase moves all of the commits in master onto the tip of feature. The problem is that this only happened in your repository. All of the other developers are still working with the original master. Since rebasing results in brand new commits, Git will think that your master branch’s history has diverged from everybody else’s.
+
+The only way to synchronize the two master branches is to merge them back together, resulting in an extra merge commit and two sets of commits that contain the same changes (the original ones, and the ones from your rebased branch). Needless to say, this is a very confusing situation.
+
+So, before you run git rebase, always ask yourself, “Is anyone else looking at this branch?” If the answer is yes, take your hands off the keyboard and start thinking about a non-destructive way to make your changes (e.g., the git revert command). Otherwise, you’re safe to re-write history as much as you like.
+
+[Atlassian's Merging vs. Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+
+### Rebase Your Feature Branch
 
 The ```rebase``` command has some awesome options available in its ```--interactive``` (or ```-i```) mode, and one of the most widely used is the ability to squash commits. What this does is take smaller commits and combine them into larger ones, which could be useful if you’re wrapping up the day’s work or if you just want to package your changes differently. We’re going to go over how you can do this easily. 
 
