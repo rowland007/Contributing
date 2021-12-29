@@ -116,26 +116,26 @@ git checkout -B docs
 You can now initialize your site's static generator if you're using one. I use [Hugo](https://gohugo.io/) and [Mkdocs](https://www.mkdocs.org/) for my pages.
 
 !!! example "Initialization Commands"
+    === ":logo: Mkdocs"
+        ```bash
+        mkdocs new .
+        ```
     === "Hugo"
         ```bash
         hugo new site --force .
         ```
-    === "Mkdocs"
-        ```bash
-        mkdocs new .
-        ```
 
 !!! tip
     Add the generated contents folder to the *.gitignore* file.
-
+    === ":logo: Mkdocs"
+        ```bash
+        echo "site/" >> .gitignore
+        ```
     === "Hugo"
         ```bash
         echo "public/" >> .gitignore
         ```
-    === "Mkdocs"
-        ```bash
-        echo "site/" >> .gitignore
-        ```
+
 
 Now comes the tricky and confusing part. While remaining on the ```docs``` or ```master``` branch, you'll checkout the ```gh-pages``` branch inside of the ```public/``` or ```site/``` folder. That way when the site is generated, it's already on the ```gh-pages``` branch. This keeps the site's source files and the site's generated files separated and in different branches for better readability.
 
@@ -143,30 +143,30 @@ Now comes the tricky and confusing part. While remaining on the ```docs``` or ``
 
 The command to be able to checkout another branch to a specific folder is ```worktree```:
 
+
 !!! example "Checkout a branch to a specific folder"
+    === ":logo: Mkdocs"
+        ```bash
+        git worktree add -B gh-pages site origin/gh-pages
+        ```
     === "Hugo"
         ```bash
         git worktree add -B gh-pages public origin/gh-pages
         ```
-    === "Mkdocs"
-        ```bash
-        git worktree add -B gh-pages site origin/gh-pages
-        ```
-
 
 !!! warning
-    Remember, you run this command from your ```docs``` or ```master``` branch. Also note you do not need the <&nbsp;> it is just there to show you only chose one of the folders depending on your generator's output folder.
+    Remember, you run this command from your ```docs``` or ```master``` branch.
 
 Now you can build your content with either ```hugo``` or ```mkdocs build```. Now you can run one command to commit your changes and push it to your site for publishing.
 
+=== ":logo: Mkdocs"
+    ```bash
+    cd site && git add --all && git commit -s -m "Publishing to gh-pages" && cd ..
+    git push origin gh-pages
+    ```
 === "Hugo"
     ```bash
     cd public && git add --all && git commit -s -m "Publishing to gh-pages" && cd ..
-    git push origin gh-pages
-    ```
-=== "Mkdocs"
-    ```bash
-    cd site && git add --all && git commit -s -m "Publishing to gh-pages" && cd ..
     git push origin gh-pages
     ```
 
@@ -184,52 +184,55 @@ git push origin docs
 You can now initialize your site's static generator if you're using one. I use [Hugo](https://gohugo.io/) and [Mkdocs](https://www.mkdocs.org/) for my pages.
 
 !!! example "Initialization Commands"
+    === ":logo: Mkdocs"
+        ```bash
+        mkdocs new .
+        ```
     === "Hugo"
         ```bash
         hugo new site --force .
         ```
-    === "Mkdocs"
-        ```bash
-        mkdocs new .
-        ```
+
 
 Don't forget to add the generated contents folder to the *.gitignore* file. 
 
 !!! tip
     Add the generated contents folder to the *.gitignore* file.
+    === ":logo: Mkdocs"
+        ```bash
+        echo "site/" >> .gitignore
+        ```
     === "Hugo"
         ```bash
         echo "public/" >> .gitignore
         ```
-    === "Mkdocs"
-        ```bash
-        echo "site/" >> .gitignore
-        ```
+
 
 The command to be able to checkout another branch to a specific folder is ```worktree```:
 
 !!! example "Checkout a branch to a specific folder"
+    === ":logo: Mkdocs"
+        ```bash
+        git worktree add -B gh-pages site origin/gh-pages
+        ```
     === "Hugo"
         ```bash
         git worktree add -B gh-pages public origin/gh-pages
         ```
-    === "Mkdocs"
-        ```bash
-        git worktree add -B gh-pages site origin/gh-pages
-        ```
+
 
 !!! warning
     Remember, you run this command from your ```docs``` or ```master``` branch. Also note you do not need the <&nbsp;> it is just there to show you only chose one of the folders depending on your generator's output folder.
 
 Now you can build your content with either ```hugo``` or ```mkdocs build```. Now you can run one command to commit your changes and push it to your site for publishing.
 
+=== ":logo: Mkdocs"
+    ```bash
+    cd site && git add --all && git commit -s -m "Publishing to gh-pages" && cd ..
+    git push origin gh-pages
+    ```
 === "Hugo"
     ```bash
     cd public && git add --all && git commit -s -m "Publishing to gh-pages" && cd ..
-    git push origin gh-pages
-    ```
-=== "Mkdocs"
-    ```bash
-    cd site && git add --all && git commit -s -m "Publishing to gh-pages" && cd ..
     git push origin gh-pages
     ```
