@@ -10,32 +10,34 @@
 Variables use lowerCamelCase and constant names use CONSTANT_CASE. All the rest of the principles below can apply to constants as well as long as they're written in CONSTANT_CASE.
 
 !!! failure "Bad"
-    ```javascript tab='Variables'
-    CURRENT_DATE
-    var_123
-    var123
-    TestThisVar
-    ```
-
-    ```javascript tab='Constants'
-    currentDate
-    constant
-    TestThisConst
-    ```
+    === "Variables"
+        ```javascript
+        CURRENT_DATE
+        var_123
+        var123
+        TestThisVar
+        ```
+    === "Constants"
+        ```javascript
+        currentDate
+        constant
+        TestThisConst
+        ```
 
 !!! success "Good"
-    ```javascript tab='Variables'
-    currentDate
-    mutableValues
-    blastOffTime
-    streetAddress
-    ```
-
-    ```javascript tab='Constants'
-    MAX_NUMBER
-    SPEED_OF_LIGHT
-    GOLDEN_RATIO
-    ```
+    === "Variables"
+        ```javascript
+        currentDate
+        mutableValues
+        blastOffTime
+        streetAddress
+        ```
+    === "Constants"
+        ```javascript
+        MAX_NUMBER
+        SPEED_OF_LIGHT
+        GOLDEN_RATIO
+        ```
 
 !!! warning
     When naming a variable after an acronym, like ATM, ISP, ID. Only the first letter is still capitalized and the rest are lower.
