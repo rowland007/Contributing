@@ -1,0 +1,1774 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Information on how to contribute to my projects">
+      
+      
+        <meta name="author" content="Randy Rowland">
+      
+      
+        <link rel="canonical" href="https://rowland007.github.io/Contributing/style-guide/functions/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.3">
+    
+    
+      
+        <title>Functions - Contributing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.edf004c2.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="amber">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Contributing" class="md-header__button md-logo" aria-label="Contributing" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 3c-1.11 0-2 .89-2 2v10a2 2 0 0 0 2 2h8v5l3-3 3 3v-5h2a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H4m8 2 3 2 3-2v3.5l3 1.5-3 1.5V15l-3-2-3 2v-3.5L9 10l3-1.5V5M4 5h5v2H4V5m0 4h3v2H4V9m0 4h5v2H4v-2z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Contributing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Functions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/rowland007/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Randy Rowland
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Contributing" class="md-nav__button md-logo" aria-label="Contributing" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 3c-1.11 0-2 .89-2 2v10a2 2 0 0 0 2 2h8v5l3-3 3 3v-5h2a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H4m8 2 3 2 3-2v3.5l3 1.5-3 1.5V15l-3-2-3 2v-3.5L9 10l3-1.5V5M4 5h5v2H4V5m0 4h3v2H4V9m0 4h5v2H4v-2z"/></svg>
+
+    </a>
+    Contributing
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/rowland007/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Randy Rowland
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Contributing
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Contributing" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Contributing
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/fork/" class="md-nav__link">
+        Forking
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/branch/" class="md-nav__link">
+        Branches
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.qubes-os.org/doc/code-signing/" class="md-nav__link">
+        Code Signing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/commit/" class="md-nav__link">
+        Commits
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/pull/" class="md-nav__link">
+        Pull Request
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/bug/" class="md-nav__link">
+        Bug Reports
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Code Style Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Code Style Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Code Style Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../variables/" class="md-nav__link">
+        Variables
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Functions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Functions
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#naming" class="md-nav__link">
+    Naming
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whitespace" class="md-nav__link">
+    Whitespace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-arguments-2-or-fewer-ideally" class="md-nav__link">
+    Function arguments (2 or fewer ideally)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions-should-do-one-thing" class="md-nav__link">
+    Functions should do one thing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-names-should-say-what-they-do" class="md-nav__link">
+    Function names should say what they do
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions-should-only-be-one-level-of-abstraction" class="md-nav__link">
+    Functions should only be one level of abstraction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-duplicate-code" class="md-nav__link">
+    Remove duplicate code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-default-objects" class="md-nav__link">
+    Set default objects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-use-flags-as-function-parameters" class="md-nav__link">
+    Don't use flags as function parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avoid-side-effects" class="md-nav__link">
+    Avoid Side Effects
+  </a>
+  
+    <nav class="md-nav" aria-label="Avoid Side Effects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#part-1" class="md-nav__link">
+    Part 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-2" class="md-nav__link">
+    Part 2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-write-to-global-functions" class="md-nav__link">
+    Don't write to global functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#favor-functional-programming-over-imperative-programming" class="md-nav__link">
+    Favor functional programming over imperative programming
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encapsulate-conditionals" class="md-nav__link">
+    Encapsulate conditionals
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avoid-negative-conditionals" class="md-nav__link">
+    Avoid negative conditionals
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avoid-conditionals" class="md-nav__link">
+    Avoid conditionals
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avoid-type-checking" class="md-nav__link">
+    Avoid type-checking
+  </a>
+  
+    <nav class="md-nav" aria-label="Avoid type-checking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#part-1_1" class="md-nav__link">
+    Part 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-2_1" class="md-nav__link">
+    Part 2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-over-optimize" class="md-nav__link">
+    Don't over-optimize
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-dead-code" class="md-nav__link">
+    Remove dead code
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/" class="md-nav__link">
+        Objects and Data Structures
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../classes/" class="md-nav__link">
+        Classes
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#naming" class="md-nav__link">
+    Naming
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whitespace" class="md-nav__link">
+    Whitespace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-arguments-2-or-fewer-ideally" class="md-nav__link">
+    Function arguments (2 or fewer ideally)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions-should-do-one-thing" class="md-nav__link">
+    Functions should do one thing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-names-should-say-what-they-do" class="md-nav__link">
+    Function names should say what they do
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions-should-only-be-one-level-of-abstraction" class="md-nav__link">
+    Functions should only be one level of abstraction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-duplicate-code" class="md-nav__link">
+    Remove duplicate code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-default-objects" class="md-nav__link">
+    Set default objects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-use-flags-as-function-parameters" class="md-nav__link">
+    Don't use flags as function parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avoid-side-effects" class="md-nav__link">
+    Avoid Side Effects
+  </a>
+  
+    <nav class="md-nav" aria-label="Avoid Side Effects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#part-1" class="md-nav__link">
+    Part 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-2" class="md-nav__link">
+    Part 2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-write-to-global-functions" class="md-nav__link">
+    Don't write to global functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#favor-functional-programming-over-imperative-programming" class="md-nav__link">
+    Favor functional programming over imperative programming
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encapsulate-conditionals" class="md-nav__link">
+    Encapsulate conditionals
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avoid-negative-conditionals" class="md-nav__link">
+    Avoid negative conditionals
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avoid-conditionals" class="md-nav__link">
+    Avoid conditionals
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avoid-type-checking" class="md-nav__link">
+    Avoid type-checking
+  </a>
+  
+    <nav class="md-nav" aria-label="Avoid type-checking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#part-1_1" class="md-nav__link">
+    Part 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-2_1" class="md-nav__link">
+    Part 2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-over-optimize" class="md-nav__link">
+    Don't over-optimize
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-dead-code" class="md-nav__link">
+    Remove dead code
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+<a href="https://github.com/rowland007/edit/master/docs/style-guide/functions.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+  <h1>Functions</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p><img alt="FUNCTION" src="../../static/img/function.png" /></p>
+<p>Functions should be easily readable, reusable, and refactorable. Functions should only perform one thing to make it easier to test and break big problems down into tiny solutions that work together to solve the problem.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This is based on <a href="https://github.com/ryanmcdermott/clean-code-javascript#functions">Ryan McDermott's clean-code-javascript</a> that was written in December 2016. Some of the principles may be very JavaScript specific. Most of the principles will apply to all languages.</p>
+</div>
+<h3 id="naming">Naming</h3>
+<p>Identifers use only ASCII letters and digits and in a small number of cases, noted below, underscores. Special prefixes or suffixes are <strong>not</strong> used. For example, <code>name_</code>, <code>mName</code>, <code>function_name</code>, and <code>kName</code>. Functions and methods are written in lowerCamelCase. The names should typically be verbs like <code>sendMessage</code> or <code>stopTransaction</code>.</p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Underscores may appear in <em>test</em> names to separate logical components of the name, with each component written in lowerCamelCase. One typical pattern is <code>&lt;functionUnderTest&gt;_&lt;state&gt;</code> like <code>pop_emptyStack</code>.</p>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">Bad</p>
+<div class="highlight"><pre><span></span><code><span class="nx">myFunction</span><span class="p">(...);</span>
+<span class="nx">My_exciting_function</span><span class="p">(...);</span>
+<span class="nx">SET_VARIABLE</span><span class="p">(...);</span>
+</code></pre></div>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Good</p>
+<div class="highlight"><pre><span></span><code><span class="nx">getCreditCardNumber</span><span class="p">(...);</span>
+<span class="nx">setAppointmentTime</span><span class="p">(...);</span>
+<span class="nx">calculateAreaOfBackyard</span><span class="p">(...);</span>
+</code></pre></div>
+</div>
+<h3 id="whitespace">Whitespace</h3>
+<p>A single blank line should be used:</p>
+<ol>
+<li>Between consecutive functions and other variables.</li>
+<li>As required by other sections of this document.</li>
+</ol>
+<p>A single blank line may also appear anywhere it improves readability, for example between statements to organize the code into logical subsections. A blank line before the first member or initializer, or after the last member or initializer of the class, is neither encouraged nor discouraged. Multiple consecutive blank lines are permitted, but never required (or encouraged).</p>
+<p>Beyond where required by the language or other style rules, and apart from literals, and comments, a single ASCII space also appears in the following places:</p>
+<ol>
+<li>Separating the function's open curly brace (<code>{</code>) and closing parenthesis (<code>)</code>) that precedes it on that line.</li>
+</ol>
+<p>Places that should avoid spaces:</p>
+<ol>
+<li>Never put a space between the function name and the open parenthesis (<code>(</code>)</li>
+<li>Open curly brace (<code>{</code>) is on the same line as the function name</li>
+</ol>
+<div class="admonition failure">
+<p class="admonition-title">Bad</p>
+<div class="highlight"><pre><span></span><code><span class="nx">getCreditCardNumber</span> <span class="p">(</span><span class="nx">user</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">//...</span>
+<span class="p">}</span>
+<span class="nx">nextFunction</span> <span class="p">(</span><span class="nx">progressReport</span><span class="p">)</span>
+<span class="p">{</span> <span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Good</p>
+<div class="highlight"><pre><span></span><code><span class="nx">setAppointmentTime</span><span class="p">(</span><span class="nx">time</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//...</span>
+<span class="p">}</span>
+
+<span class="nx">calculateAreaOfBackyard</span><span class="p">(</span><span class="nx">width</span><span class="p">,</span> <span class="nx">height</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//...</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<h2 id="function-arguments-2-or-fewer-ideally">Function arguments (2 or fewer ideally)</h2>
+<p>Limiting the amount of function parameters is incredibly important because it
+makes testing your function easier. Having more than three leads to a
+combinatorial explosion where you have to test tons of different cases with
+each separate argument.</p>
+<p>One or two arguments is the ideal case, and three should be avoided if possible.
+Anything more than that should be consolidated. Usually, if you have
+more than two arguments then your function is trying to do too much. In cases
+where it's not, most of the time a higher-level object will suffice as an
+argument.</p>
+<p>Since JavaScript allows you to make objects on the fly, without a lot of class
+boilerplate, you can use an object if you are finding yourself needing a
+lot of arguments.</p>
+<p>To make it obvious what properties the function expects, you can use the ES2015/ES6
+destructuring syntax. This has a few advantages:</p>
+<ol>
+<li>When someone looks at the function signature, it's immediately clear what
+   properties are being used.</li>
+<li>Destructuring also clones the specified primitive values of the argument
+   object passed into the function. This can help prevent side effects. Note:
+   objects and arrays that are destructured from the argument object are NOT
+   cloned.</li>
+<li>Linters can warn you about unused properties, which would be impossible
+   without destructuring.</li>
+</ol>
+<div class="admonition failure">
+<p class="admonition-title">Bad</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">createMenu</span><span class="p">(</span><span class="nx">title</span><span class="p">,</span> <span class="nx">body</span><span class="p">,</span> <span class="nx">buttonText</span><span class="p">,</span> <span class="nx">cancellable</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Good</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">createMenu</span><span class="p">({</span> <span class="nx">title</span><span class="p">,</span> <span class="nx">body</span><span class="p">,</span> <span class="nx">buttonText</span><span class="p">,</span> <span class="nx">cancellable</span> <span class="p">})</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+<span class="p">}</span>
+
+<span class="nx">createMenu</span><span class="p">({</span>
+    <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Foo&quot;</span><span class="p">,</span>
+    <span class="nx">body</span><span class="o">:</span> <span class="s2">&quot;Bar&quot;</span><span class="p">,</span>
+    <span class="nx">buttonText</span><span class="o">:</span> <span class="s2">&quot;Baz&quot;</span><span class="p">,</span>
+    <span class="nx">cancellable</span><span class="o">:</span> <span class="kc">true</span>
+<span class="p">});</span>
+</code></pre></div>
+</div>
+<h2 id="functions-should-do-one-thing">Functions should do one thing</h2>
+<p>This is by far the most important rule in software engineering. When functions
+do more than one thing, they are harder to compose, test, and reason about.
+When you can isolate a function to just one action, they can be refactored
+easily and your code will read much cleaner. If you take nothing else away from
+this guide other than this, you'll be ahead of many developers.</p>
+<div class="admonition failure">
+<p class="admonition-title">Bad</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">emailClients</span><span class="p">(</span><span class="nx">clients</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">clients</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">client</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="nx">clientRecord</span> <span class="o">=</span> <span class="nx">database</span><span class="p">.</span><span class="nx">lookup</span><span class="p">(</span><span class="nx">client</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">clientRecord</span><span class="p">.</span><span class="nx">isActive</span><span class="p">())</span> <span class="p">{</span>
+            <span class="nx">email</span><span class="p">(</span><span class="nx">client</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Good</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">emailActiveClients</span><span class="p">(</span><span class="nx">clients</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">clients</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">isActiveClient</span><span class="p">).</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">email</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">isActiveClient</span><span class="p">(</span><span class="nx">client</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">clientRecord</span> <span class="o">=</span> <span class="nx">database</span><span class="p">.</span><span class="nx">lookup</span><span class="p">(</span><span class="nx">client</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nx">clientRecord</span><span class="p">.</span><span class="nx">isActive</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<h2 id="function-names-should-say-what-they-do">Function names should say what they do</h2>
+<div class="admonition failure">
+<p class="admonition-title">Bad</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">addToDate</span><span class="p">(</span><span class="nx">date</span><span class="p">,</span> <span class="nx">month</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">date</span> <span class="o">=</span> <span class="ow">new</span> <span class="nb">Date</span><span class="p">();</span>
+
+<span class="c1">// It&#39;s hard to tell from the function name what is added</span>
+<span class="nx">addToDate</span><span class="p">(</span><span class="nx">date</span><span class="p">,</span> <span class="mf">1</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Good</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">addMonthToDate</span><span class="p">(</span><span class="nx">month</span><span class="p">,</span> <span class="nx">date</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">date</span> <span class="o">=</span> <span class="ow">new</span> <span class="nb">Date</span><span class="p">();</span>
+<span class="nx">addMonthToDate</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span> <span class="nx">date</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<h2 id="functions-should-only-be-one-level-of-abstraction">Functions should only be one level of abstraction</h2>
+<p>When you have more than one level of abstraction your function is usually
+doing too much. Splitting up functions leads to reusability and easier
+testing.</p>
+<div class="admonition failure">
+<p class="admonition-title">Bad</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">parseBetterJSAlternative</span><span class="p">(</span><span class="nx">code</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">REGEXES</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="c1">// ...</span>
+    <span class="p">];</span>
+
+    <span class="kd">const</span> <span class="nx">statements</span> <span class="o">=</span> <span class="nx">code</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">tokens</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="nx">REGEXES</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">REGEX</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="nx">statements</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">statement</span> <span class="p">=&gt;</span> <span class="p">{</span>
+            <span class="c1">// ...</span>
+        <span class="p">});</span>
+    <span class="p">});</span>
+
+    <span class="kd">const</span> <span class="nx">ast</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="nx">tokens</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">token</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="c1">// lex...</span>
+    <span class="p">});</span>
+
+    <span class="nx">ast</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">node</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="c1">// parse...</span>
+    <span class="p">});</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Good</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">parseBetterJSAlternative</span><span class="p">(</span><span class="nx">code</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">tokens</span> <span class="o">=</span> <span class="nx">tokenize</span><span class="p">(</span><span class="nx">code</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">syntaxTree</span> <span class="o">=</span> <span class="nx">parse</span><span class="p">(</span><span class="nx">tokens</span><span class="p">);</span>
+    <span class="nx">syntaxTree</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">node</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="c1">// parse...</span>
+    <span class="p">});</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">tokenize</span><span class="p">(</span><span class="nx">code</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">REGEXES</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="c1">// ...</span>
+    <span class="p">];</span>
+
+    <span class="kd">const</span> <span class="nx">statements</span> <span class="o">=</span> <span class="nx">code</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">tokens</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="nx">REGEXES</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">REGEX</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="nx">statements</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">statement</span> <span class="p">=&gt;</span> <span class="p">{</span>
+            <span class="nx">tokens</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="cm">/* ... */</span><span class="p">);</span>
+        <span class="p">});</span>
+    <span class="p">});</span>
+
+    <span class="k">return</span> <span class="nx">tokens</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">parse</span><span class="p">(</span><span class="nx">tokens</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">syntaxTree</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="nx">tokens</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">token</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="nx">syntaxTree</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="cm">/* ... */</span><span class="p">);</span>
+    <span class="p">});</span>
+
+    <span class="k">return</span> <span class="nx">syntaxTree</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<h2 id="remove-duplicate-code">Remove duplicate code</h2>
+<p>Do your absolute best to avoid duplicate code. Duplicate code is bad because it
+means that there's more than one place to alter something if you need to change
+some logic.</p>
+<p>Imagine if you run a restaurant and you keep track of your inventory: all your
+tomatoes, onions, garlic, spices, etc. If you have multiple lists that
+you keep this on, then all have to be updated when you serve a dish with
+tomatoes in them. If you only have one list, there's only one place to update!</p>
+<p>Oftentimes you have duplicate code because you have two or more slightly
+different things, that share a lot in common, but their differences force you
+to have two or more separate functions that do much of the same things. Removing
+duplicate code means creating an abstraction that can handle this set of
+different things with just one function/module/class.</p>
+<p>Getting the abstraction right is critical, that's why you should follow the
+SOLID principles laid out in the <em>Classes</em> section. Bad abstractions can be
+worse than duplicate code, so be careful! Having said this, if you can make
+a good abstraction, do it! Don't repeat yourself, otherwise you'll find yourself
+updating multiple places anytime you want to change one thing.</p>
+<div class="admonition failure">
+<p class="admonition-title">Bad</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">showDeveloperList</span><span class="p">(</span><span class="nx">developers</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">developers</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">developer</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="nx">expectedSalary</span> <span class="o">=</span> <span class="nx">developer</span><span class="p">.</span><span class="nx">calculateExpectedSalary</span><span class="p">();</span>
+        <span class="kd">const</span> <span class="nx">experience</span> <span class="o">=</span> <span class="nx">developer</span><span class="p">.</span><span class="nx">getExperience</span><span class="p">();</span>
+        <span class="kd">const</span> <span class="nx">githubLink</span> <span class="o">=</span> <span class="nx">developer</span><span class="p">.</span><span class="nx">getGithubLink</span><span class="p">();</span>
+        <span class="kd">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="nx">expectedSalary</span><span class="p">,</span>
+            <span class="nx">experience</span><span class="p">,</span>
+            <span class="nx">githubLink</span>
+        <span class="p">};</span>
+
+    <span class="nx">render</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">showManagerList</span><span class="p">(</span><span class="nx">managers</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">managers</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">manager</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="nx">expectedSalary</span> <span class="o">=</span> <span class="nx">manager</span><span class="p">.</span><span class="nx">calculateExpectedSalary</span><span class="p">();</span>
+        <span class="kd">const</span> <span class="nx">experience</span> <span class="o">=</span> <span class="nx">manager</span><span class="p">.</span><span class="nx">getExperience</span><span class="p">();</span>
+        <span class="kd">const</span> <span class="nx">portfolio</span> <span class="o">=</span> <span class="nx">manager</span><span class="p">.</span><span class="nx">getMBAProjects</span><span class="p">();</span>
+        <span class="kd">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="nx">expectedSalary</span><span class="p">,</span>
+            <span class="nx">experience</span><span class="p">,</span>
+            <span class="nx">portfolio</span>
+        <span class="p">};</span>
+
+    <span class="nx">render</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Good</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">showEmployeeList</span><span class="p">(</span><span class="nx">employees</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">employees</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">employee</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="nx">expectedSalary</span> <span class="o">=</span> <span class="nx">employee</span><span class="p">.</span><span class="nx">calculateExpectedSalary</span><span class="p">();</span>
+        <span class="kd">const</span> <span class="nx">experience</span> <span class="o">=</span> <span class="nx">employee</span><span class="p">.</span><span class="nx">getExperience</span><span class="p">();</span>
+        <span class="kd">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="nx">expectedSalary</span><span class="p">,</span>
+            <span class="nx">experience</span>
+        <span class="p">};</span>
+
+        <span class="k">switch</span> <span class="p">(</span><span class="nx">employee</span><span class="p">.</span><span class="nx">type</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">case</span> <span class="s2">&quot;manager&quot;</span><span class="o">:</span>
+                <span class="nx">data</span><span class="p">.</span><span class="nx">portfolio</span> <span class="o">=</span> <span class="nx">employee</span><span class="p">.</span><span class="nx">getMBAProjects</span><span class="p">();</span>
+                <span class="k">break</span><span class="p">;</span>
+            <span class="k">case</span> <span class="s2">&quot;developer&quot;</span><span class="o">:</span>
+                <span class="nx">data</span><span class="p">.</span><span class="nx">githubLink</span> <span class="o">=</span> <span class="nx">employee</span><span class="p">.</span><span class="nx">getGithubLink</span><span class="p">();</span>
+                <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+
+    <span class="nx">render</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<h2 id="set-default-objects">Set default objects</h2>
+<div class="admonition failure">
+<p class="admonition-title">Bad</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">menuConfig</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">title</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+    <span class="nx">body</span><span class="o">:</span> <span class="s2">&quot;Bar&quot;</span><span class="p">,</span>
+    <span class="nx">buttonText</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+    <span class="nx">cancellable</span><span class="o">:</span> <span class="kc">true</span>
+<span class="p">};</span>
+
+<span class="kd">function</span> <span class="nx">createMenu</span><span class="p">(</span><span class="nx">config</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">config</span><span class="p">.</span><span class="nx">title</span> <span class="o">=</span> <span class="nx">config</span><span class="p">.</span><span class="nx">title</span> <span class="o">||</span> <span class="s2">&quot;Foo&quot;</span><span class="p">;</span>
+    <span class="nx">config</span><span class="p">.</span><span class="nx">body</span> <span class="o">=</span> <span class="nx">config</span><span class="p">.</span><span class="nx">body</span> <span class="o">||</span> <span class="s2">&quot;Bar&quot;</span><span class="p">;</span>
+    <span class="nx">config</span><span class="p">.</span><span class="nx">buttonText</span> <span class="o">=</span> <span class="nx">config</span><span class="p">.</span><span class="nx">buttonText</span> <span class="o">||</span> <span class="s2">&quot;Baz&quot;</span><span class="p">;</span>
+    <span class="nx">config</span><span class="p">.</span><span class="nx">cancellable</span> <span class="o">=</span>
+    <span class="nx">config</span><span class="p">.</span><span class="nx">cancellable</span> <span class="o">!==</span> <span class="kc">undefined</span> <span class="o">?</span> <span class="nx">config</span><span class="p">.</span><span class="nx">cancellable</span> <span class="o">:</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">createMenu</span><span class="p">(</span><span class="nx">menuConfig</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Good</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">menuConfig</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Order&quot;</span><span class="p">,</span>
+    <span class="c1">// User did not include &#39;body&#39; key</span>
+    <span class="nx">buttonText</span><span class="o">:</span> <span class="s2">&quot;Send&quot;</span><span class="p">,</span>
+    <span class="nx">cancellable</span><span class="o">:</span> <span class="kc">true</span>
+<span class="p">};</span>
+
+<span class="kd">function</span> <span class="nx">createMenu</span><span class="p">(</span><span class="nx">config</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">config</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="p">(</span> <span class="p">{</span>
+            <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Foo&quot;</span><span class="p">,</span>
+            <span class="nx">body</span><span class="o">:</span> <span class="s2">&quot;Bar&quot;</span><span class="p">,</span>
+            <span class="nx">buttonText</span><span class="o">:</span> <span class="s2">&quot;Baz&quot;</span><span class="p">,</span>
+            <span class="nx">cancellable</span><span class="o">:</span> <span class="kc">true</span>
+        <span class="p">},</span>
+        <span class="nx">config</span>
+    <span class="p">);</span>
+
+    <span class="c1">// config now equals: {title: &quot;Order&quot;, body: &quot;Bar&quot;, buttonText: &quot;Send&quot;, cancellable: true}</span>
+    <span class="c1">// ...</span>
+<span class="p">}</span>
+
+<span class="nx">createMenu</span><span class="p">(</span><span class="nx">menuConfig</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<h2 id="dont-use-flags-as-function-parameters">Don't use flags as function parameters</h2>
+<p>Flags tell your user that this function does more than one thing. Functions should do one thing. Split out your functions if they are following different code paths based on a boolean.</p>
+<div class="admonition failure">
+<p class="admonition-title">Bad</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">createFile</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">temp</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">temp</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">fs</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="sb">`./temp/</span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nx">fs</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Good</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">createFile</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">fs</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">createTempFile</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">createFile</span><span class="p">(</span><span class="sb">`./temp/</span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<h2 id="avoid-side-effects">Avoid Side Effects</h2>
+<h3 id="part-1">Part 1</h3>
+<p>A function produces a side effect if it does anything other than take a value in
+and return another value or values. A side effect could be writing to a file,
+modifying some global variable, or accidentally wiring all your money to a
+stranger.</p>
+<p>Now, you do need to have side effects in a program on occasion. Like the previous
+example, you might need to write to a file. What you want to do is to
+centralize where you are doing this. Don't have several functions and classes
+that write to a particular file. Have one service that does it. One and only one.</p>
+<p>The main point is to avoid common pitfalls like sharing state between objects
+without any structure, using mutable data types that can be written to by anything,
+and not centralizing where your side effects occur. If you can do this, you will
+be happier than the vast majority of other programmers.</p>
+<div class="admonition failure">
+<p class="admonition-title">Bad</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Global variable referenced by following function.</span>
+<span class="c1">// If we had another function that used this name, now it&#39;d be an array and it could break it.</span>
+<span class="kd">let</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;Ryan McDermott&quot;</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nx">splitIntoFirstAndLastName</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">splitIntoFirstAndLastName</span><span class="p">();</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span> <span class="c1">// [&#39;Ryan&#39;, &#39;McDermott&#39;];</span>
+</code></pre></div>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Good</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">splitIntoFirstAndLastName</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">name</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;Ryan McDermott&quot;</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">newName</span> <span class="o">=</span> <span class="nx">splitIntoFirstAndLastName</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span> <span class="c1">// &#39;Ryan McDermott&#39;;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">newName</span><span class="p">);</span> <span class="c1">// [&#39;Ryan&#39;, &#39;McDermott&#39;];</span>
+</code></pre></div>
+</div>
+<h3 id="part-2">Part 2</h3>
+<p>In JavaScript, primitives are passed by value and objects/arrays are passed by
+reference. In the case of objects and arrays, if your function makes a change
+in a shopping cart array, for example, by adding an item to purchase,
+then any other function that uses that <code>cart</code> array will be affected by this
+addition. That may be great, however it can be bad too. Let's imagine a bad
+situation:</p>
+<p>The user clicks the "Purchase", button which calls a <code>purchase</code> function that
+spawns a network request and sends the <code>cart</code> array to the server. Because
+of a bad network connection, the <code>purchase</code> function has to keep retrying the
+request. Now, what if in the meantime the user accidentally clicks "Add to Cart"
+button on an item they don't actually want before the network request begins?
+If that happens and the network request begins, then that purchase function
+will send the accidentally added item because it has a reference to a shopping
+cart array that the <code>addItemToCart</code> function modified by adding an unwanted
+item.</p>
+<p>A great solution would be for the <code>addItemToCart</code> to always clone the <code>cart</code>,
+edit it, and return the clone. This ensures that no other functions that are
+holding onto a reference of the shopping cart will be affected by any changes.</p>
+<p>Two caveats to mention to this approach:</p>
+<ol>
+<li>
+<p>There might be cases where you actually want to modify the input object,
+   but when you adopt this programming practice you will find that those cases
+   are pretty rare. Most things can be refactored to have no side effects!</p>
+</li>
+<li>
+<p>Cloning big objects can be very expensive in terms of performance. Luckily,
+   this isn't a big issue in practice because there are
+   <a href="https://facebook.github.io/immutable-js/">great libraries</a> that allow
+   this kind of programming approach to be fast and not as memory intensive as
+   it would be for you to manually clone objects and arrays.</p>
+</li>
+</ol>
+<div class="admonition failure">
+<p class="admonition-title">Bad</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">addItemToCart</span> <span class="o">=</span> <span class="p">(</span><span class="nx">cart</span><span class="p">,</span> <span class="nx">item</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">cart</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span> <span class="nx">item</span><span class="p">,</span> <span class="nx">date</span><span class="o">:</span> <span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">()</span> <span class="p">});</span>
+<span class="p">};</span>
+</code></pre></div>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Good</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">addItemToCart</span> <span class="o">=</span> <span class="p">(</span><span class="nx">cart</span><span class="p">,</span> <span class="nx">item</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">[...</span><span class="nx">cart</span><span class="p">,</span> <span class="p">{</span> <span class="nx">item</span><span class="p">,</span> <span class="nx">date</span><span class="o">:</span> <span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">()</span> <span class="p">}];</span>
+<span class="p">};</span>
+</code></pre></div>
+</div>
+<h2 id="dont-write-to-global-functions">Don't write to global functions</h2>
+<p>Polluting globals is a bad practice in JavaScript because you could clash with another
+library and the user of your API would be none-the-wiser until they get an
+exception in production. Let's think about an example: what if you wanted to
+extend JavaScript's native Array method to have a <code>diff</code> method that could
+show the difference between two arrays? You could write your new function
+to the <code>Array.prototype</code>, but it could clash with another library that tried
+to do the same thing. What if that other library was just using <code>diff</code> to find
+the difference between the first and last elements of an array? This is why it
+would be much better to just use ES2015/ES6 classes and simply extend the <code>Array</code> global.</p>
+<div class="admonition failure">
+<p class="admonition-title">Bad</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">diff</span> <span class="o">=</span> <span class="kd">function</span> <span class="nx">diff</span><span class="p">(</span><span class="nx">comparisonArray</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">hash</span> <span class="o">=</span> <span class="ow">new</span> <span class="nb">Set</span><span class="p">(</span><span class="nx">comparisonArray</span><span class="p">);</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">elem</span> <span class="p">=&gt;</span> <span class="o">!</span><span class="nx">hash</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="nx">elem</span><span class="p">));</span>
+<span class="p">};</span>
+</code></pre></div>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Good</p>
+<div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nx">SuperArray</span> <span class="k">extends</span> <span class="nb">Array</span> <span class="p">{</span>
+    <span class="nx">diff</span><span class="p">(</span><span class="nx">comparisonArray</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="nx">hash</span> <span class="o">=</span> <span class="ow">new</span> <span class="nb">Set</span><span class="p">(</span><span class="nx">comparisonArray</span><span class="p">);</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">elem</span> <span class="p">=&gt;</span> <span class="o">!</span><span class="nx">hash</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="nx">elem</span><span class="p">));</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<h2 id="favor-functional-programming-over-imperative-programming">Favor functional programming over imperative programming</h2>
+<p>JavaScript isn't a functional language in the way that Haskell is, but it has
+a functional flavor to it. Functional languages can be cleaner and easier to test.
+Favor this style of programming when you can.</p>
+<div class="admonition failure">
+<p class="admonition-title">Bad</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">programmerOutput</span> <span class="o">=</span> <span class="p">[</span>
+<span class="p">{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Uncle Bobby&quot;</span><span class="p">,</span>
+    <span class="nx">linesOfCode</span><span class="o">:</span> <span class="mf">500</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Suzie Q&quot;</span><span class="p">,</span>
+    <span class="nx">linesOfCode</span><span class="o">:</span> <span class="mf">1500</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Jimmy Gosling&quot;</span><span class="p">,</span>
+    <span class="nx">linesOfCode</span><span class="o">:</span> <span class="mf">150</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Gracie Hopper&quot;</span><span class="p">,</span>
+    <span class="nx">linesOfCode</span><span class="o">:</span> <span class="mf">1000</span>
+<span class="p">}</span>
+<span class="p">];</span>
+
+<span class="kd">let</span> <span class="nx">totalOutput</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">programmerOutput</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">totalOutput</span> <span class="o">+=</span> <span class="nx">programmerOutput</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">linesOfCode</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>```</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Good</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">programmerOutput</span> <span class="o">=</span> <span class="p">[</span>
+<span class="p">{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Uncle Bobby&quot;</span><span class="p">,</span>
+    <span class="nx">linesOfCode</span><span class="o">:</span> <span class="mf">500</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Suzie Q&quot;</span><span class="p">,</span>
+    <span class="nx">linesOfCode</span><span class="o">:</span> <span class="mf">1500</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Jimmy Gosling&quot;</span><span class="p">,</span>
+    <span class="nx">linesOfCode</span><span class="o">:</span> <span class="mf">150</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Gracie Hopper&quot;</span><span class="p">,</span>
+    <span class="nx">linesOfCode</span><span class="o">:</span> <span class="mf">1000</span>
+<span class="p">}</span>
+<span class="p">];</span>
+
+<span class="kd">const</span> <span class="nx">totalOutput</span> <span class="o">=</span> <span class="nx">programmerOutput</span><span class="p">.</span><span class="nx">reduce</span><span class="p">(</span>
+    <span class="p">(</span><span class="nx">totalLines</span><span class="p">,</span> <span class="nx">output</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">totalLines</span> <span class="o">+</span> <span class="nx">output</span><span class="p">.</span><span class="nx">linesOfCode</span><span class="p">,</span>
+    <span class="mf">0</span>
+<span class="p">);</span>
+</code></pre></div>
+</div>
+<h2 id="encapsulate-conditionals">Encapsulate conditionals</h2>
+<div class="admonition failure">
+<p class="admonition-title">Bad</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="p">(</span><span class="nx">fsm</span><span class="p">.</span><span class="nx">state</span> <span class="o">===</span> <span class="s2">&quot;fetching&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">isEmpty</span><span class="p">(</span><span class="nx">listNode</span><span class="p">))</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Good</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">shouldShowSpinner</span><span class="p">(</span><span class="nx">fsm</span><span class="p">,</span> <span class="nx">listNode</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">fsm</span><span class="p">.</span><span class="nx">state</span> <span class="o">===</span> <span class="s2">&quot;fetching&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">isEmpty</span><span class="p">(</span><span class="nx">listNode</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">shouldShowSpinner</span><span class="p">(</span><span class="nx">fsmInstance</span><span class="p">,</span> <span class="nx">listNodeInstance</span><span class="p">))</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<h2 id="avoid-negative-conditionals">Avoid negative conditionals</h2>
+<div class="admonition failure">
+<p class="admonition-title">Bad</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">isDOMNodeNotPresent</span><span class="p">(</span><span class="nx">node</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">isDOMNodeNotPresent</span><span class="p">(</span><span class="nx">node</span><span class="p">))</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Good</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">isDOMNodePresent</span><span class="p">(</span><span class="nx">node</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">isDOMNodePresent</span><span class="p">(</span><span class="nx">node</span><span class="p">))</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<h2 id="avoid-conditionals">Avoid conditionals</h2>
+<p>This seems like an impossible task. Upon first hearing this, most people say,
+"how am I supposed to do anything without an <code>if</code> statement?" The answer is that
+you can use polymorphism to achieve the same task in many cases. The second
+question is usually, "well that's great but why would I want to do that?" The
+answer is a previous clean code concept we learned: a function should only do
+one thing. When you have classes and functions that have <code>if</code> statements, you
+are telling your user that your function does more than one thing. Remember,
+just do one thing.</p>
+<div class="admonition failure">
+<p class="admonition-title">Bad</p>
+<div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nx">Airplane</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+    <span class="nx">getCruisingAltitude</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">type</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">case</span> <span class="s2">&quot;777&quot;</span><span class="o">:</span>
+                <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">getMaxAltitude</span><span class="p">()</span> <span class="o">-</span> <span class="k">this</span><span class="p">.</span><span class="nx">getPassengerCount</span><span class="p">();</span>
+            <span class="k">case</span> <span class="s2">&quot;Air Force One&quot;</span><span class="o">:</span>
+                <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">getMaxAltitude</span><span class="p">();</span>
+            <span class="k">case</span> <span class="s2">&quot;Cessna&quot;</span><span class="o">:</span>
+                <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">getMaxAltitude</span><span class="p">()</span> <span class="o">-</span> <span class="k">this</span><span class="p">.</span><span class="nx">getFuelExpenditure</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Good</p>
+<div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nx">Airplane</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Boeing777</span> <span class="k">extends</span> <span class="nx">Airplane</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+    <span class="nx">getCruisingAltitude</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">getMaxAltitude</span><span class="p">()</span> <span class="o">-</span> <span class="k">this</span><span class="p">.</span><span class="nx">getPassengerCount</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">AirForceOne</span> <span class="k">extends</span> <span class="nx">Airplane</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+    <span class="nx">getCruisingAltitude</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">getMaxAltitude</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Cessna</span> <span class="k">extends</span> <span class="nx">Airplane</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+    <span class="nx">getCruisingAltitude</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">getMaxAltitude</span><span class="p">()</span> <span class="o">-</span> <span class="k">this</span><span class="p">.</span><span class="nx">getFuelExpenditure</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<h2 id="avoid-type-checking">Avoid type-checking</h2>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>This is based on <a href="https://github.com/ryanmcdermott/clean-code-javascript#functions">Ryan McDermott's clean-code-javascript</a> that was written in December 2016. Does this violate secure coding principles?</p>
+</div>
+<h3 id="part-1_1">Part 1</h3>
+<p>JavaScript is untyped, which means your functions can take any type of argument.
+Sometimes you are bitten by this freedom and it becomes tempting to do
+type-checking in your functions. There are many ways to avoid having to do this.
+The first thing to consider is consistent APIs.</p>
+<div class="admonition failure">
+<p class="admonition-title">Bad</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">travelToTexas</span><span class="p">(</span><span class="nx">vehicle</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">vehicle</span> <span class="ow">instanceof</span> <span class="nx">Bicycle</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">vehicle</span><span class="p">.</span><span class="nx">pedal</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">currentLocation</span><span class="p">,</span> <span class="ow">new</span> <span class="nx">Location</span><span class="p">(</span><span class="s2">&quot;texas&quot;</span><span class="p">));</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">vehicle</span> <span class="ow">instanceof</span> <span class="nx">Car</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">vehicle</span><span class="p">.</span><span class="nx">drive</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">currentLocation</span><span class="p">,</span> <span class="ow">new</span> <span class="nx">Location</span><span class="p">(</span><span class="s2">&quot;texas&quot;</span><span class="p">));</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Good</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">travelToTexas</span><span class="p">(</span><span class="nx">vehicle</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">vehicle</span><span class="p">.</span><span class="nx">move</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">currentLocation</span><span class="p">,</span> <span class="ow">new</span> <span class="nx">Location</span><span class="p">(</span><span class="s2">&quot;texas&quot;</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<h3 id="part-2_1">Part 2</h3>
+<p>If you are working with basic primitive values like strings and integers,
+and you can't use polymorphism but you still feel the need to type-check,
+you should consider using TypeScript. It is an excellent alternative to normal
+JavaScript, as it provides you with static typing on top of standard JavaScript
+syntax. The problem with manually type-checking normal JavaScript is that
+doing it well requires so much extra verbiage that the faux "type-safety" you get
+doesn't make up for the lost readability. Keep your JavaScript clean, write
+good tests, and have good code reviews. Otherwise, do all of that but with
+TypeScript (which, like I said, is a great alternative!).</p>
+<div class="admonition failure">
+<p class="admonition-title">Bad</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">combine</span><span class="p">(</span><span class="nx">val1</span><span class="p">,</span> <span class="nx">val2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span>
+      <span class="p">(</span><span class="ow">typeof</span> <span class="nx">val1</span> <span class="o">===</span> <span class="s2">&quot;number&quot;</span> <span class="o">&amp;&amp;</span> <span class="ow">typeof</span> <span class="nx">val2</span> <span class="o">===</span> <span class="s2">&quot;number&quot;</span><span class="p">)</span> <span class="o">||</span>
+      <span class="p">(</span><span class="ow">typeof</span> <span class="nx">val1</span> <span class="o">===</span> <span class="s2">&quot;string&quot;</span> <span class="o">&amp;&amp;</span> <span class="ow">typeof</span> <span class="nx">val2</span> <span class="o">===</span> <span class="s2">&quot;string&quot;</span><span class="p">)</span>
+    <span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">val1</span> <span class="o">+</span> <span class="nx">val2</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">throw</span> <span class="ow">new</span> <span class="ne">Error</span><span class="p">(</span><span class="s2">&quot;Must be of type String or Number&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Good</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">combine</span><span class="p">(</span><span class="nx">val1</span><span class="p">,</span> <span class="nx">val2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">val1</span> <span class="o">+</span> <span class="nx">val2</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<h2 id="dont-over-optimize">Don't over-optimize</h2>
+<p>Modern browsers do a lot of optimization under-the-hood at runtime. A lot of
+times, if you are optimizing then you are just wasting your time. <a href="https://github.com/petkaantonov/bluebird/wiki/Optimization-killers">There are good
+resources</a>
+for seeing where optimization is lacking. Target those in the meantime, until
+they are fixed if they can be.</p>
+<div class="admonition failure">
+<p class="admonition-title">Bad</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// On old browsers, each iteration with uncached `list.length` would be costly</span>
+<span class="c1">// because of `list.length` recomputation. In modern browsers, this is optimized.</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">,</span> <span class="nx">len</span> <span class="o">=</span> <span class="nx">list</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">len</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Good</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">list</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<h2 id="remove-dead-code">Remove dead code</h2>
+<p>Dead code is just as bad as duplicate code. There's no reason to keep it in
+your codebase. If it's not being called, get rid of it! It will still be safe
+in your version history if you still need it.</p>
+<div class="admonition failure">
+<p class="admonition-title">Bad</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">oldRequestModule</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">newRequestModule</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">req</span> <span class="o">=</span> <span class="nx">newRequestModule</span><span class="p">;</span>
+<span class="nx">inventoryTracker</span><span class="p">(</span><span class="s2">&quot;apples&quot;</span><span class="p">,</span> <span class="nx">req</span><span class="p">,</span> <span class="s2">&quot;www.inventory-awesome.io&quot;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Good</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">newRequestModule</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">req</span> <span class="o">=</span> <span class="nx">newRequestModule</span><span class="p">;</span>
+<span class="nx">inventoryTracker</span><span class="p">(</span><span class="s2">&quot;apples&quot;</span><span class="p">,</span> <span class="nx">req</span><span class="p">,</span> <span class="s2">&quot;www.inventory-awesome.io&quot;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../variables/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Variables" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Variables
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../objects/" class="md-footer__link md-footer__link--next" aria-label="Next: Objects and Data Structures" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Objects and Data Structures
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2019-2022 Randall Rowland<br>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://randyrowland.me" target="_blank" rel="noopener" title="randyrowland.me" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.35 10.03A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.03A6.004 6.004 0 0 0 0 14a6 6 0 0 0 6 6h13a5 5 0 0 0 5-5c0-2.64-2.05-4.78-4.65-4.97z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/rowland007" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/randarxj7" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/randall-rowland-jr" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.reddit.com/user/rowland007" target="_blank" rel="noopener" title="www.reddit.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M440.3 203.5c-15 0-28.2 6.2-37.9 15.9-35.7-24.7-83.8-40.6-137.1-42.3L293 52.3l88.2 19.8c0 21.6 17.6 39.2 39.2 39.2 22 0 39.7-18.1 39.7-39.7s-17.6-39.7-39.7-39.7c-15.4 0-28.7 9.3-35.3 22l-97.4-21.6c-4.9-1.3-9.7 2.2-11 7.1L246.3 177c-52.9 2.2-100.5 18.1-136.3 42.8-9.7-10.1-23.4-16.3-38.4-16.3-55.6 0-73.8 74.6-22.9 100.1-1.8 7.9-2.6 16.3-2.6 24.7 0 83.8 94.4 151.7 210.3 151.7 116.4 0 210.8-67.9 210.8-151.7 0-8.4-.9-17.2-3.1-25.1 49.9-25.6 31.5-99.7-23.8-99.7zM129.4 308.9c0-22 17.6-39.7 39.7-39.7 21.6 0 39.2 17.6 39.2 39.7 0 21.6-17.6 39.2-39.2 39.2-22 .1-39.7-17.6-39.7-39.2zm214.3 93.5c-36.4 36.4-139.1 36.4-175.5 0-4-3.5-4-9.7 0-13.7 3.5-3.5 9.7-3.5 13.2 0 27.8 28.5 120 29 149 0 3.5-3.5 9.7-3.5 13.2 0 4.1 4 4.1 10.2.1 13.7zm-.8-54.2c-21.6 0-39.2-17.6-39.2-39.2 0-22 17.6-39.7 39.2-39.7 22 0 39.7 17.6 39.7 39.7-.1 21.5-17.7 39.2-39.7 39.2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.0bbba5b5.min.js"}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e1a181d9.min.js"></script>
+      
+    
+  </body>
+</html>
